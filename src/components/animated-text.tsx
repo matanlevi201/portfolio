@@ -7,7 +7,7 @@ interface AnimatedTextProps {
 
 function AnimatedText({ text }: AnimatedTextProps) {
   const [isVisible, setIsVisible] = useState(false);
-
+  //
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(true);
