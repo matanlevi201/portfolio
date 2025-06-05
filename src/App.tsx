@@ -1,21 +1,19 @@
 import Navbar from "./components/navbar";
 import ProjectSection from "./components/project-section";
-// import TopProject from "./components/top-project";
 import HeroSection from "./components/hero-section";
-// import ShowcaseProject from "./components/showcase-project";
 import { ScrollAnimation } from "./components/scroll-animation";
+import SkillsSection from "./components/skills-section";
+import ExperienceSection from "./components/experience-section";
 
 function App() {
   return (
     <div className="h-full bg-black/90">
       <Navbar />
       <HeroSection />
-      {/* <HeroSection /> */}
-      {/* <MainProject /> */}
-      {/* <ShowcaseProject /> */}
+      <ExperienceSection />
       <ScrollAnimation />
-      {/* <TopProject /> */}
       <ProjectSection />
+      <SkillsSection />
     </div>
   );
 }

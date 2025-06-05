@@ -2,6 +2,18 @@ import { Code2Icon } from "lucide-react";
 import { Button } from "./ui/button";
 
 function Navbar() {
+  const scrollToProjects = () => {
+    const section = document.querySelector("#projects");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+  const scrollToSkills = () => {
+    const section = document.querySelector("#skills");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-zinc-800 bg-black/80 backdrop-blur-md">
       <div className="container flex h-16 items-center justify-between mx-auto">
@@ -17,21 +29,17 @@ function Navbar() {
         <nav className="hidden md:flex items-center gap-6">
           <Button
             variant="link"
+            onClick={scrollToSkills}
             className="text-sm font-medium text-zinc-400 hover:text-white transition-colors"
           >
             Skills
           </Button>
           <Button
             variant="link"
+            onClick={scrollToProjects}
             className="text-sm font-medium text-zinc-400 hover:text-white transition-colors"
           >
             Projects
-          </Button>
-          <Button
-            variant="link"
-            className="text-sm font-medium text-zinc-400 hover:text-white transition-colors"
-          >
-            Contact
           </Button>
         </nav>
         <div className="flex items-center gap-4 px-4 py-2">
