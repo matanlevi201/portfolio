@@ -17,14 +17,6 @@ function ProjectSection() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <ProjectCard
-            title="Interview Platform"
-            description="An app designed for coding interviews, where interviewers can video chat with candidates, ask technical questions, and collaborate in real time through a shared coding environment."
-            tags={["Next.js", "Convex"]}
-            image="code-sync.png"
-            sourceCodeLink="https://github.com/matanlevi201/code-sync"
-            demoLink="https://code-sync-ochre.vercel.app/"
-          />
-          <ProjectCard
             title="Authify"
             description="Developed a secure auth system with email, Google OAuth2, 2FA, password reset, and robust DI. Fully tested backend with CI/CD via GitHub Actions and deployed on Render.com."
             tags={[
@@ -38,22 +30,25 @@ function ProjectSection() {
             image="authify.png"
             sourceCodeLink="https://github.com/matanlevi201/authify"
             demoLink="https://authify-8yww.onrender.com"
+            logo="authify-logo.png"
           />
           <ProjectCard
-            title="Task Management App"
-            description="A collaborative task management tool with real-time updates and team collaboration features."
-            tags={["Vue", "Express", "MongoDB"]}
-            image="code-snap.png"
-            sourceCodeLink="https://github.com/matanlevi201/code-sync"
-            demoLink="https://code-sync-ochre.vercel.app/"
+            title="Chatify"
+            description="Built a real-time chat app with Express, TypeScript, React, MongoDB, and Socket.IO. Used React Query for data fetching, with live messaging and state sync. Deployed on Render.com."
+            tags={["Typescript", "React", "Express", "MongoDB", "Socket.IO"]}
+            image="chatify.png"
+            sourceCodeLink="https://github.com/matanlevi201/chatify"
+            demoLink="https://chatify.it.com"
+            logo="chatify.svg"
           />
           <ProjectCard
-            title="Analytics Dashboard"
-            description="Interactive data visualization dashboard for monitoring business metrics and performance."
-            tags={["TypeScript", "React", "D3.js"]}
-            image="intelix.png"
+            title="Interview Platform"
+            description="An app designed for coding interviews, where interviewers can video chat with candidates, ask technical questions, and collaborate in real time through a shared coding environment."
+            tags={["Next.js", "Convex"]}
+            image="code-sync.png"
             sourceCodeLink="https://github.com/matanlevi201/code-sync"
             demoLink="https://code-sync-ochre.vercel.app/"
+            logo=""
           />
         </div>
         <div className="text-center mt-12">
