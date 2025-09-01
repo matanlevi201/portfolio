@@ -1,3 +1,4 @@
+import { FileUserIcon, GithubIcon, LinkedinIcon } from "lucide-react";
 import AnimatedText from "./animated-text";
 import FloatingTechCubes from "./floating-tech-cubes";
 import { Button } from "./ui/button";
@@ -25,15 +26,23 @@ function HeroSection() {
           Vue, Express.js, and PostgreSQL to build powerful, scalable
           applications.
         </p>
-        <div className="flex gap-4 mt-2">
-          <Button className=" bg-purple-600 hover:bg-purple-700">
-            View Projects
-          </Button>
-          <Button
-            variant="outline"
-            className="border-zinc-700 hover:bg-zinc-800"
-          >
-            Contact Me
+        <div className="space-x-4">
+          <a href="https://github.com/matanlevi201" target="_blank">
+            <Button variant="outline" size="icon">
+              <GithubIcon className="h-4 w-4" />
+              <span className="sr-only">GitHub</span>
+            </Button>
+          </a>
+          <a href="https://www.linkedin.com/in/matanlevi404" target="_blank">
+            <Button variant="outline" size="icon">
+              <LinkedinIcon className="h-4 w-4" />
+              <span className="sr-only">LinkedIn</span>
+            </Button>
+          </a>
+
+          <Button variant="outline" size="icon">
+            <FileUserIcon className="h-4 w-4" />
+            <span className="sr-only">Resume</span>
           </Button>
         </div>
       </div>

@@ -11,6 +11,7 @@ interface ProjectCardProps {
   image: string;
   sourceCodeLink: string;
   demoLink: string;
+  logo?: string;
 }
 
 export default function ProjectCard({
@@ -20,6 +21,7 @@ export default function ProjectCard({
   image,
   sourceCodeLink,
   demoLink,
+  logo,
 }: ProjectCardProps) {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -46,7 +48,10 @@ export default function ProjectCard({
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
         </div>
         <CardContent className="p-6 grow flex flex-col justify-between">
-          <h3 className="text-xl font-bold mb-2">{title}</h3>
+          <div className="flex gap-2 items-center">
+            <h3 className="text-xl font-bold mb-2">{title}</h3>
+            {logo && <img src={logo} alt="" className="size-12" />}
+          </div>
           <p className="text-zinc-400 text-sm mb-4">{description}</p>
           <div className="flex flex-wrap gap-2 mb-6">
             {tags.map((tag) => (
