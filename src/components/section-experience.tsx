@@ -29,6 +29,34 @@ function ExperienceSection() {
       location: "Ramat Gan, IL",
       logo: <Building2Icon />,
     },
+    {
+      id: 2,
+      title: "Full Stack Developer",
+      company: "Moveo HLS — On-site placement at AT&T",
+      type: "Full Time",
+      startDate: "Aug 2025",
+      endDate: "Current",
+      achievements: [
+        "Working on a platform improving software delivery through Productivity, Quality, Reliability, and Infra cost insights.",
+        "Implemented a notification system that alerts managers on Microsoft Teams about app vulnerabilities.",
+        "Working with Azure Databricks for holistic data processing, storage, and business intelligence hosting.",
+        "Wrote e2e tests using Cypress to cover full user scenarios, ensuring system reliability.",
+        "Built dynamic, interactive, and user-focused interfaces using Angular.",
+        "Developing and maintaining backend API services using Nest.js.",
+      ],
+      technologies: [
+        "Nest.js",
+        "Angular",
+        "TypeScript",
+        "PostgreSQL",
+        "Databricks",
+        "Cypress",
+        "Jest",
+        "APIs",
+      ],
+      location: "Air Port City",
+      logo: <img src="src/assets/att-icon.svg" className="w-[24px]" />,
+    },
   ];
 
   return (
@@ -47,7 +75,7 @@ function ExperienceSection() {
         <div className="relative flex flex-col items-center gap-18">
           <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-blue-300 via-purple-400 to-blue-300 -translate-x-1/2 z-0"></div>
           <ExperienceCard alignment="future" />
-
+          <ExperienceCard item={workExperiences[1]} alignment="right" />
           <ExperienceCard item={workExperiences[0]} alignment="left" />
         </div>
       </div>
